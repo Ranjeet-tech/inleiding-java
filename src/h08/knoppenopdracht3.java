@@ -16,16 +16,19 @@ public class knoppenopdracht3 extends Applet {
     public void init() {
 
 
+        totaal = 100;
+        btw1 = totaal / 100 * 21;
+        btw2 = totaal / 100 * 81;
         okeknop = new Button("OK");
-        tekstvakje = new TextField("typ hier het bedrag", 25);
+        tekstvakje = new TextField(""+ totaal, 25);
         stickertje = new Label("");
         add(okeknop);
         add(tekstvakje);
         add(stickertje);
         okeknop.addActionListener(new okeknop());
         totaal = btw1 + btw2;
-        btw1 = totaal / 100 * 21;
-        btw2 = totaal / 100 * 81;
+
+
 
 
 
@@ -46,7 +49,10 @@ public class knoppenopdracht3 extends Applet {
 
         public void actionPerformed(ActionEvent e) {
 
-            stickertje.setText("");
+            String message = tekstvakje.getText();
+            stickertje.setText(message+"  inclusief BTW. BTW ="+ btw1);
+            tekstvakje.setText("");
+
 
         }
     }
