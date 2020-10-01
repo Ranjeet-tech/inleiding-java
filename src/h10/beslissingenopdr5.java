@@ -69,22 +69,30 @@ public class beslissingenopdr5 extends Applet {
 
 
             String S,D,P;
+            int aantalIngevuldeCijfers = 0;
 
             S = tekstvakje1.getText();
-            //een = Integer.parseInt(S);
-            if (S==null||S == "")System.out.println("ranjeet");
 
-           D = tekstvakje2.getText();
-           twee = Integer.parseInt(D);
+            D = tekstvakje2.getText();
 
-           P = tekstvakje3.getText();
-           drie = Integer.parseInt(P);
+            P = tekstvakje3.getText();
 
-           vier = (een + twee + drie) / 3;
+            if (!S.equals("")) {
+                een = Integer.parseInt(S); aantalIngevuldeCijfers++;
+            }
+            if (!D.equals("")){
+                twee = Integer.parseInt(D); aantalIngevuldeCijfers++;
+            }
+            if (!P.equals("")) {
+                drie = Integer.parseInt(P); aantalIngevuldeCijfers++;
+            }
 
-           tekst = vier+"";
-           System.out.println(tekst);
-           repaint();
+            vier =(double) (een + twee + drie) / aantalIngevuldeCijfers;
+
+            tekst = vier+"";
+            repaint();
+
+
         }
 
     }
