@@ -40,7 +40,6 @@ public class beslissingenopdr3 extends Applet {
 
             if (getal == 1){
                 tekst = "maand"+ getal + "is januari. en januari heeft 31 dagen";
-
             }
             if (getal == 2){
                 tekst = "maand"+ getal + "is februari. en heeft 28 dagen";
@@ -59,7 +58,6 @@ public class beslissingenopdr3 extends Applet {
             }
             if (getal == 7){
                 tekst = "maand"+ getal + "is juli. en juli heeft 31 dagen";
-
             }
             if (getal == 8){
                 tekst = "maand"+ getal + "is augustus. en heeft 31 dagen";
@@ -69,7 +67,6 @@ public class beslissingenopdr3 extends Applet {
             }
             if (getal == 10){
                 tekst = "maand"+ getal + "is oktober. en april heeft 31 dagen";
-
             }
             if (getal == 11){
                 tekst = "maand"+ getal + "is november. en heeft 30 dagen";

@@ -29,6 +29,7 @@ public class praktijkopdracht extends Applet {
     public void paint(Graphics g) {
 
         g.drawString(tekst, 50, 50);
+        g.drawString("hoi",50, 50);
     }
 
     class knoplistener implements ActionListener {

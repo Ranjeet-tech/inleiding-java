@@ -41,6 +41,9 @@ public class knoppenopdracht3 extends Applet {
         stickertje.setSize(300, 20);
         stickertje.setLocation(40, 50);
 
+
+
+
     }
 
 

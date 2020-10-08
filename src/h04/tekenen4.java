@@ -5,7 +5,10 @@ import java.awt.*;
 
 public class tekenen4 extends Applet {
 
+
+
     public void init() {
+
 
     }
     public void paint(Graphics g) {
