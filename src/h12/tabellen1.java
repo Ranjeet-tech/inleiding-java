@@ -5,17 +5,23 @@ import java.awt.*;
 
 public class tabellen1 extends Applet {
 
-    double salaris[];
+    int salaris[];
+    Label stickertje;
 
     public void init() {
-        salaris = new double [5];
+        salaris = new int [10];
+        stickertje = new Label("het gemiddelde is 5,5");
+
+        add(stickertje);
 
         for (int teller = 0; teller < salaris.length; teller ++) {
-            salaris[teller] = 100 * teller + 100;
+            salaris[teller] = 1 * teller + 1;
         }
     }
 
     public void paint(Graphics g) {
+
+        stickertje.setLocation(100,50);
 
         for (int teller = 0; teller < salaris.length; teller ++) {
             g.drawString("" + salaris[teller], 50, 20 * teller + 20);
